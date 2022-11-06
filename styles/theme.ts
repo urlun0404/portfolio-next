@@ -1,0 +1,21 @@
+export const theme = {
+  breakpoints: {
+    sm: '480px',
+    md: '640px',
+    lg: '768px',
+    xl: '960px',
+  },
+  fontSizes: {
+    sm: '0.75rem',
+    md: '1rem',
+    lg: '1.25rem',
+    xl: '1.5rem',
+  },
+  colors: {
+    bg: {
+      black20: 'rgba(0, 0, 0, 0.2)',
+      black30: 'rgba(0, 0, 0, 0.3)',
+      black70: 'rgba(0, 0, 0, 0.7)',
+    },
+  },
+} as const;
