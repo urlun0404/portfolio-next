@@ -15,6 +15,17 @@ export const theme = {
     $4xl: '2.25rem',
     $5xl: '2.5rem',
   },
+  fontWeights: {
+    thin: '100',
+    extraLight: '200',
+    light: '300',
+    regular: '400',
+    medium: '500',
+    semiBold: '600',
+    bold: '700',
+    extraBold: '800',
+    black: '900',
+  },
   colors: {
     bg: {
       black20: 'rgba(0, 0, 0, 0.2)',
