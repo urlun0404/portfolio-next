@@ -8,7 +8,7 @@ interface Props {
 export const OpenBtn = styled.button`
   display: none;
   pointer-events: none;
-  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     display: block;
     padding: 0.25rem;
     pointer-events: unset;
@@ -22,7 +22,7 @@ export const OpenBtn = styled.button`
 
 export const BurgerMenu = styled.div<Props>`
   display: none;
-  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -67,7 +67,7 @@ export const Nav = styled.li`
 
 export const Overlay = styled(UI.Overlay)<Props>`
   display: none;
-  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     z-index: 10;
     display: block;
     width: ${(props) => (props.isMenuOpened ? '100%' : 0)};

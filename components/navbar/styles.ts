@@ -16,7 +16,7 @@ export const NavWrapper = styled.ul`
   align-items: center;
   width: 60%;
   text-align: center;
-  @media (max-width: ${(props) => props.theme.breakpoints.sm}) {
+  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     display: none;
   }
 `;

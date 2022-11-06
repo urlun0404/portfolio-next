@@ -1,15 +1,19 @@
 export const theme = {
   breakpoints: {
-    sm: '480px',
-    md: '640px',
-    lg: '768px',
-    xl: '960px',
+    $sm: '480px',
+    $md: '640px',
+    $lg: '768px',
+    $xl: '960px',
   },
   fontSizes: {
-    sm: '0.75rem',
-    md: '1rem',
-    lg: '1.25rem',
-    xl: '1.5rem',
+    $sm: '0.75rem',
+    $md: '1rem',
+    $lg: '1.25rem',
+    $xl: '1.5rem',
+    $2xl: '1.75rem',
+    $3xl: '2rem',
+    $4xl: '2.25rem',
+    $5xl: '2.5rem',
   },
   colors: {
     bg: {
