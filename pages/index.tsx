@@ -1,5 +1,6 @@
-import GlobalStyles from '../styles/global';
 import Head from 'next/head';
+import Theme from 'styles';
+import GlobalStyles from 'styles/global';
 
 export default function Home() {
   return (
@@ -17,7 +18,9 @@ export default function Home() {
           <title>You-Lun Lin | Frontend Developer</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <main></main>
+        <Theme>
+          <main></main>
+        </Theme>
       </>
     </>
   );
