@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         font-size: ${theme.fontSizes.$md};
         font-weight: ${theme.fontWeights.medium};
+        overflow-x: hidden;
     }
     
     ul {

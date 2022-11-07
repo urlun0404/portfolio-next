@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { theme } from 'styles/theme';
 
 export const Section = styled.section`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 2rem 0;
   padding: 1rem 0.75rem;

@@ -7,19 +7,22 @@ import NavBar from 'components/navbar';
 import Projects from 'components/projects';
 import Skills from 'components/skills';
 import Theme from 'styles';
+import ProjectsProvider from 'store/project-context';
 
 export default function HomePage() {
   return (
     <>
       <GlobalStyles />
       <Theme>
-        <NavBar />
-        <Home />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
+        <ProjectsProvider>
+          <NavBar />
+          <Home />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </ProjectsProvider>
       </Theme>
     </>
   );

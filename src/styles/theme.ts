@@ -6,7 +6,8 @@ export const theme = {
     $xl: '960px',
   },
   fontSizes: {
-    $sm: '0.75rem',
+    $xs: '0.75rem',
+    $sm: '0.875rem',
     $md: '1rem',
     $lg: '1.25rem',
     $xl: '1.5rem',
