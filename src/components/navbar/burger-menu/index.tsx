@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Navs from '../navs';
 import React, { useCallback, useEffect, useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
@@ -33,21 +33,7 @@ export default function BurgerMenu() {
           </s.CloseBtn>
         </s.MenuTop>
         <s.NavWrapper>
-          <s.Nav>
-            <Link href="/">Home</Link>
-          </s.Nav>
-          <s.Nav>
-            <Link href="/">About</Link>
-          </s.Nav>
-          <s.Nav>
-            <Link href="/">Skills</Link>
-          </s.Nav>
-          <s.Nav>
-            <Link href="/">Projects</Link>
-          </s.Nav>
-          <s.Nav>
-            <Link href="/">Contact</Link>
-          </s.Nav>
+          <Navs />
         </s.NavWrapper>
       </s.BurgerMenu>
       <s.Overlay isMenuOpened={isMenuOpened} />

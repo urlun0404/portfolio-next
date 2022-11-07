@@ -16,11 +16,12 @@ export const NavWrapper = styled.ul`
   align-items: center;
   width: 60%;
   text-align: center;
+
+  .nav {
+    padding: 0.25rem 0.5rem;
+  }
+
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     display: none;
   }
-`;
-
-export const Nav = styled.li`
-  padding: 0.25rem 0.5rem;
 `;

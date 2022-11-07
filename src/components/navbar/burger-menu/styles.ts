@@ -8,6 +8,7 @@ interface Props {
 export const OpenBtn = styled.button`
   display: none;
   pointer-events: none;
+
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     display: block;
     padding: 0.25rem;
@@ -22,6 +23,7 @@ export const OpenBtn = styled.button`
 
 export const BurgerMenu = styled.div<Props>`
   display: none;
+
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     position: fixed;
     top: 0;
@@ -49,7 +51,8 @@ export const CloseBtn = styled.button`
   z-index: 100;
   padding: 0.25rem;
   cursor: pointer;
-  & > svg {
+
+  svg {
     width: 25px;
     height: 25px;
   }
@@ -59,14 +62,15 @@ export const NavWrapper = styled.ul`
   display: flex;
   flex-direction: column;
   width: 60%;
-`;
 
-export const Nav = styled.li`
-  padding: 0.5rem 0.25rem;
+  .nav {
+    padding: 0.5rem 0.75rem;
+  }
 `;
 
 export const Overlay = styled(UI.Overlay)<Props>`
   display: none;
+
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     z-index: 10;
     display: block;
