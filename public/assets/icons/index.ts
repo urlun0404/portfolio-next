@@ -1,0 +1,10 @@
+export { default as cpp } from './icons8-cpp-480x480.svg';
+export { default as css3 } from './icons8-css3-480x480.svg';
+export { default as git } from './icons8-git-480x480.svg';
+export { default as html5 } from './icons8-html5-480x480.svg';
+export { default as javascript } from './icons8-javascript-480x480.svg';
+export { default as react } from './icons8-react-480x480.svg';
+export { default as redux } from './icons8-redux-480x480.svg';
+export { default as webpack } from './icons8-webpack-480x480.svg';
+export { default as nextjs } from './next-js-480x480.svg';
+export { default as vite } from './vite-480x480.svg';
