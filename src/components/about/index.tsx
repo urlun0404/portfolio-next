@@ -4,7 +4,7 @@ import * as s from './styles';
 
 export default function About() {
   return (
-    <s.About>
+    <s.About id="about">
       <s.Title>about</s.Title>
       <s.Biography>
         <p>

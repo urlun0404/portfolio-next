@@ -4,7 +4,7 @@ import ContactInfo from './contact-info';
 
 export default function Contact() {
   return (
-    <s.Contact>
+    <s.Contact id="contact">
       <s.Title>Contact</s.Title>
       <s.Container>
         <ContactInfo />

@@ -14,6 +14,7 @@ const GlobalStyles = createGlobalStyle`
         font-size: ${theme.fontSizes.$md};
         font-weight: ${theme.fontWeights.medium};
         overflow-x: hidden;
+        scroll-behavior: smooth;
     }
     
     ul {
