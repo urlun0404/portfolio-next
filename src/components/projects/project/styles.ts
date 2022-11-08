@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 import { Card } from 'styles/ui';
 
@@ -12,6 +13,10 @@ export const Project = styled(Card)`
   padding: 1rem 0.75rem;
   margin: 2rem 1rem;
   text-align: center;
+
+  .caption {
+    text-transform: capitalize;
+  }
 `;
 
 export const FigContainer = styled.figure`
@@ -79,17 +84,16 @@ export const FigCaption = styled.figcaption`
   font-weight: ${(props) => props.theme.fontWeights.bold};
 `;
 
-export const MoreInfoLink = styled.a`
+export const MoreInfoLink = styled(Link)`
   width: 80px;
   height: 2.5em;
-  line-height: 1.5em;
   padding: 0.5rem 0.75rem;
+  line-height: 1.5em;
   font-size: ${(props) => props.theme.fontSizes.$xs};
   background-color: #c6c6c6;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 8px;
-  cursor: pointer;
 
   &:active {
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 6px 0px inset,

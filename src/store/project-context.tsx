@@ -2,44 +2,44 @@ import { createContext } from 'react';
 import * as Images from '../../public/assets/images/';
 
 export interface ProjectsType {
-  name: string,
-  caption: string,
-  src: any,
-  alt: string,
+  name: string;
+  caption: string;
+  src: any;
+  alt: string;
   link: {
-    github: string,
-    demo: string,
-  },
-  detail: {
-    path: string,
-  },
+    github: string;
+    demo: string;
+  };
+  details: {
+    query: string;
+  };
 }
 
 const PROJECTS = [
   {
-    name: '',
-    caption: '',
-    src: '/assets/images',
+    name: 'portfolio',
+    caption: 'Portfolio',
+    src: Images.hawaii,
     alt: 'picture of project',
     link: {
-      github: '',
-      demo: '',
+      github: 'https://github.com/urlun0404/hawaii/',
+      demo: 'https://hawaii-project-urlun0404.netlify.app/',
     },
-    detail: {
-      path: '',
+    details: {
+      query: 'portfolio',
     },
   },
   {
-    name: 'photo-collection',
-    caption: 'Photo-Collection Website',
-    src: '/assets/images',
-    alt: 'picture of Photo Collection Website project',
+    name: 'photo-gallery',
+    caption: 'Photo Gallery Website',
+    src: Images.hawaii,
+    alt: 'picture of Photo Gallery Website project',
     link: {
-      github: '',
-      demo: '',
+      github: 'https://github.com/urlun0404/hawaii/',
+      demo: 'https://hawaii-project-urlun0404.netlify.app/',
     },
-    detail: {
-      path: '',
+    details: {
+      query: 'photo-gallery',
     },
   },
   {
@@ -51,8 +51,8 @@ const PROJECTS = [
       github: 'https://github.com/urlun0404/hawaii/',
       demo: 'https://hawaii-project-urlun0404.netlify.app/',
     },
-    detail: {
-      path: '/hawauu',
+    details: {
+      query: 'hawaii',
     },
   },
 ];

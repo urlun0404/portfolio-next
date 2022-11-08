@@ -1,6 +1,5 @@
 import * as s from './styles';
 import Image from 'next/image';
-import Link from 'next/link';
 import { FiGithub, FiLink } from 'react-icons/fi';
 import { ProjectsType } from 'store/project-context';
 
@@ -36,9 +35,9 @@ export default function Project(props: Props) {
           </s.DemoLink>
         </s.DemoLinkContainer>
       </s.FigContainer>
-      <s.FigCaption>{'Capation'}</s.FigCaption>
-      <s.MoreInfoLink>
-        <Link href={`/${props.caption}`}>More Info</Link>
+      <s.FigCaption className="caption">{props.name}</s.FigCaption>
+      <s.MoreInfoLink href={`projects/${props.details.query}`}>
+        More Info
       </s.MoreInfoLink>
     </s.Project>
   );
