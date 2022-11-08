@@ -1,7 +1,9 @@
 import * as s from './styles';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { useLayoutEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+
+type NavIdValue = typeof navId[keyof typeof navId];
 
 const navId = {
   home: '',
@@ -11,13 +13,11 @@ const navId = {
   contact: '#contact',
 };
 
-type NavIdValue = typeof navId[keyof typeof navId];
-
 export default function Navs() {
   const [activeNav, setActiveNav] = useState<NavIdValue>('');
   const router = useRouter();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     setActiveNav(router.asPath.substring(1));
   }, [router.asPath]);
 

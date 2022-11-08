@@ -10,7 +10,6 @@ export const Nav = styled.li`
   }
 
   a {
-    color: #000000;
     transition: all ease-in 0.3s;
 
     &:hover {
