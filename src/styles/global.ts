@@ -23,6 +23,7 @@ const GlobalStyles = createGlobalStyle`
 
     a {
         text-decoration: none;
+        color:#000000;
     }
 
     button {
