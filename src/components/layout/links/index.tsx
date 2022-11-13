@@ -4,6 +4,7 @@ import {
   AiFillMail,
   AiFillLinkedin,
   AiFillTwitterCircle,
+  AiFillEdit,
 } from 'react-icons/ai';
 
 export default function Links() {
@@ -12,16 +13,9 @@ export default function Links() {
       <s.Link
         href="mailto:urlun0404@gmail.com?subject=Feedback_&body=Message"
         target="_blank"
-        title="Shoot me an email from your email client"
+        title="Email"
       >
         <AiFillMail />
-      </s.Link>
-      <s.Link
-        href="https://www.linkedin.com/in/urlun0404"
-        target="_blank"
-        title="Linkedin"
-      >
-        <AiFillLinkedin />
       </s.Link>
       <s.Link
         href="https://github.com/urlun0404"
@@ -31,11 +25,25 @@ export default function Links() {
         <AiFillGithub />
       </s.Link>
       <s.Link
+        href="https://www.linkedin.com/in/urlun0404"
+        target="_blank"
+        title="Linkedin"
+      >
+        <AiFillLinkedin />
+      </s.Link>
+      <s.Link
         href="https://twitter.com/urlun0404"
         target="_blank"
         title="Twitter"
       >
         <AiFillTwitterCircle />
+      </s.Link>
+      <s.Link
+        href="https://urlun0404.coderbridge.io/"
+        target="_blank"
+        title="Blog"
+      >
+        <AiFillEdit />
       </s.Link>
     </>
   );
