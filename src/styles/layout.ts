@@ -6,7 +6,7 @@ export const Section = styled.section`
   min-height: 100vh;
   height: 100%;
   margin: 2rem 0;
-  padding: 60px 0.75rem;
+  padding: 60px 2rem;
 
   @media (max-width: ${theme.breakpoints.$sm}) {
     display: flex important!;
