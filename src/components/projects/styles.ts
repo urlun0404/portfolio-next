@@ -3,7 +3,8 @@ import * as L from 'styles/layout';
 
 export const Projects = styled(L.Section)`
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
 `;
 
 export const Title = styled(L.SectionTitle)``;

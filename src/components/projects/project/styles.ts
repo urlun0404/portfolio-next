@@ -7,11 +7,11 @@ export const Project = styled(Card)`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  min-width: 220px;
+  min-width: 250px;
   width: 25%;
-  height: 300px;
+  height: 350px;
   padding: 1rem 0.75rem;
-  margin: 2rem 1rem;
+  margin: 1.5rem;
   text-align: center;
 
   .caption {
@@ -23,7 +23,7 @@ export const FigContainer = styled.figure`
   position: relative;
   min-height: 140px;
   width: 100%;
-  height: 20%;
+  height: 50%;
   overflow: hidden;
 
   #demo {

@@ -19,11 +19,11 @@ const PROJECTS = [
   {
     name: 'portfolio',
     caption: 'Portfolio',
-    src: Images.hawaii,
-    alt: 'picture of project',
+    src: Images.photoGallery,
+    alt: 'picture of Portfolio project',
     link: {
-      github: 'https://github.com/urlun0404/hawaii/',
-      demo: 'https://hawaii-project-urlun0404.netlify.app/',
+      github: 'https://github.com/urlun0404/portfolio-next',
+      demo: '/',
     },
     details: {
       query: 'portfolio',
@@ -32,24 +32,24 @@ const PROJECTS = [
   {
     name: 'photo-gallery',
     caption: 'Photo Gallery Website',
-    src: Images.hawaii,
+    src: Images.photoGallery,
     alt: 'picture of Photo Gallery Website project',
     link: {
-      github: 'https://github.com/urlun0404/hawaii/',
-      demo: 'https://hawaii-project-urlun0404.netlify.app/',
+      github: 'https://github.com/urlun0404/photo-gallery-react',
+      demo: '#',
     },
     details: {
       query: 'photo-gallery',
     },
   },
   {
-    name: 'hawaii',
-    caption: 'Hawaii',
-    src: Images.hawaii,
+    name: 'to-do-list',
+    caption: 'To Do List',
+    src: Images.toToListJs,
     alt: 'picture of Hawaii project',
     link: {
-      github: 'https://github.com/urlun0404/hawaii/',
-      demo: 'https://hawaii-project-urlun0404.netlify.app/',
+      github: 'https://github.com/urlun0404/todolist',
+      demo: 'https://todolist-project-urlun0404.netlify.app/',
     },
     details: {
       query: 'hawaii',
