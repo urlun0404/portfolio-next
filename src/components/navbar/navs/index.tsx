@@ -9,7 +9,7 @@ const navId = {
   home: '',
   about: '#about',
   skills: '#skills',
-  projects: '#porjects',
+  projects: '#projects',
   contact: '#contact',
 };
 
