@@ -8,4 +8,5 @@ export const DummyHeader = styled.header`
   width: 100%;
   height: 50px;
   background-color: transparent;
+  z-index: -100;
 `;
