@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const NavBar = styled.nav`
   z-index: 100;
@@ -9,15 +9,17 @@ export const NavBar = styled.nav`
   padding: 0.25rem 1rem;
   width: 100%;
 
-  @media (min-width: ${(props) => props.theme.breakpoints.$sm}) {
-    &.fixed {
-      position: fixed;
-      top: 0;
-      background-color: ${(props) => props.theme.colors.bg.black90};
+  &.fixed {
+    position: fixed;
+    top: 0;
+  }
 
-      & a {
-        color: ${(props) => props.theme.colors.bg.white90};
-      }
+  &.dark {
+    background-color: ${(props) => props.theme.colors.bg.black90};
+
+    & > a,
+    & > .burger-menu.open-btn > svg {
+      color: ${(props) => props.theme.colors.bg.white90};
     }
   }
 `;

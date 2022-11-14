@@ -14,6 +14,7 @@ export const OpenBtn = styled.button`
     padding: 0.25rem;
     pointer-events: unset;
     cursor: pointer;
+
     & > svg {
       width: 25px;
       height: 25px;

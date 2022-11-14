@@ -8,11 +8,11 @@ interface Props {
 
 export default function Navbar(props: Props) {
   return (
-    <s.NavBar className={props.isNavbarFixed ? 'fixed' : ''}>
+    <s.NavBar className={props.isNavbarFixed ? 'fixed dark' : ''}>
       <s.NavWrapper>
         <Navs />
       </s.NavWrapper>
-      <BurgerMenu />
+      <BurgerMenu className={`${props.isNavbarFixed ? 'fixed dark' : ''}`} />
     </s.NavBar>
   );
 }

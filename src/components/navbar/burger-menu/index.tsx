@@ -4,7 +4,11 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
 import * as s from './styles';
 
-export default function BurgerMenu() {
+interface Props {
+  className: string;
+}
+
+export default function BurgerMenu(props: Props) {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
 
   useEffect(() => {
@@ -23,7 +27,10 @@ export default function BurgerMenu() {
 
   return (
     <>
-      <s.OpenBtn onClick={openMenu}>
+      <s.OpenBtn
+        onClick={openMenu}
+        className={`burger-menu open-btn ${props.className}`}
+      >
         <GiHamburgerMenu />
       </s.OpenBtn>
       <s.BurgerMenu isMenuOpened={isMenuOpened}>
