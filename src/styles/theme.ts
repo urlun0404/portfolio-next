@@ -45,11 +45,13 @@ export const theme = {
       white30: 'rgba(255, 255, 255, 0.3)',
       white50: 'rgba(255, 255, 255, 0.5)',
       white70: 'rgba(255, 255, 255, 0.7)',
+      white90: 'rgba(255, 255, 255, 0.9)',
       black10: 'rgba(0, 0, 0, 0.1)',
       black20: 'rgba(0, 0, 0, 0.2)',
       black30: 'rgba(0, 0, 0, 0.3)',
       black50: 'rgba(0, 0, 0, 0.5)',
       black70: 'rgba(0, 0, 0, 0.7)',
+      black90: 'rgba(0, 0, 0, 0.9)',
     },
   },
 } as const;
