@@ -11,7 +11,7 @@ export const Info = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     align-items: center;
     padding: 1rem 0.5rem 50px;
-  } ;
+  }
 `;
 
 export const Brief = styled.div`

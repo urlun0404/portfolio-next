@@ -14,8 +14,6 @@ export const Skill = styled.div`
   padding: 0.75rem;
   border: 1px solid gray;
   border-radius: 10px;
-  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
-  }
 `;
 
 export const FigContainer = styled.figure`

@@ -35,5 +35,5 @@ export const Container = styled.section`
       width: 95%;
       margin: 2rem 0.25rem;
     }
-  } ;
+  }
 `;

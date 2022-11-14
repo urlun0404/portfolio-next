@@ -13,6 +13,7 @@ export const Home = styled(L.Section)`
 export const Title = styled.h1`
   margin: 1rem 0;
   font-weight: ${(props) => props.theme.fontWeights.medium};
+
   & > span {
     font-weight: ${(props) => props.theme.fontWeights.bold};
   }
@@ -25,6 +26,7 @@ export const SubTitle = styled.h2`
   font-weight: ${(props) => props.theme.fontWeights.light};
   line-height: 1.5em;
   line-height: 1.75rem;
+
   & > p:first-child {
     margin: 0.25rem 0;
     font-size: 1.05rem;
@@ -34,14 +36,18 @@ export const SubTitle = styled.h2`
 
 export const LinksContainer = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 2rem 0;
+  margin: 2rem 0.25rem;
+
   a {
+    min-width: 36px;
+    min-height: 36px;
     width: 48px;
     height: 48px;
     padding: 0.75rem;
-    margin: 0 1rem;
+    margin: 0.25rem 1rem;
   }
 `;
