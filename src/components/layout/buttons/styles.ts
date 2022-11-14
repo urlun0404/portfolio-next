@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const BackToTop = styled.button`
   position: fixed;
-  right: 50px;
+  right: 20px;
   bottom: 20px;
-  width: 36px;
-  height: 36px;
-  padding: 0.5rem;
+  width: 48px;
+  height: 48px;
+  padding: 0.75rem;
   background-color: ${(props) => props.theme.colors.bg.grayLight70};
   border-radius: 50%;
   transition: all ease-in 0.2s;
@@ -21,7 +21,7 @@ export const BackToTop = styled.button`
 
   &:hover {
     background-color: ${(props) => props.theme.colors.bg.gray70};
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 
   svg {
