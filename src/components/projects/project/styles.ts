@@ -17,6 +17,10 @@ export const Project = styled(Card)`
   .caption {
     text-transform: capitalize;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
+    margin: 1.5rem auto;
+  }
 `;
 
 export const FigContainer = styled.figure`
