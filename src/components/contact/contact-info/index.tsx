@@ -8,12 +8,14 @@ export default function ContactInfo() {
     <s.Info id="info">
       <s.Brief>
         <Image src={person1} alt="picture of the author" />
-        <p>You-Lun, Lin (Lauren, Lin)</p>
-        <p>Web Developer</p>
-        <p>
-          This is You Lun &rsquo; s personal website. Please feel free to
-          message me 😊
-        </p>
+        <s.BriefTextContainer>
+          <p>You-Lun, Lin (Lauren, Lin)</p>
+          <p>Web Developer</p>
+          <p>
+            This is You Lun &rsquo; s personal website. Please feel free to
+            message me 😊
+          </p>
+        </s.BriefTextContainer>
       </s.Brief>
       <s.ContactLinks>
         <p>歡迎點選以下連結或者填寫表單與我聯絡💬</p>

@@ -15,10 +15,11 @@ export const Container = styled.section`
 
   & > #info,
   form {
-    flex: 1 1 45%;
-    min-width: 48%;
-    height: 90%;
-    margin: 0 0.25rem;
+    flex: 1 1 30%;
+    min-width: 30%;
+    min-height: 85%;
+    padding: 1rem;
+    margin: 1rem;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
       rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
       rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;

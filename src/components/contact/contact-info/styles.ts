@@ -3,28 +3,37 @@ import styled from 'styled-components';
 export const Info = styled.div`
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem 1rem 50px;
-
-  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
-    align-items: center;
-    padding: 1rem 0.5rem 50px;
-  }
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0.5rem;
 `;
 
 export const Brief = styled.div`
   position: relative;
   top: 30px;
-  width: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
   text-align: center;
 
   img {
     width: 100%;
+    max-width: 150px;
+
     height: auto;
     border-radius: 50%;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
+    position: static;
+  }
+`;
+
+export const BriefTextContainer = styled.div`
+  padding: 1rem;
 
   p {
     margin: 0.5rem 0;
@@ -36,10 +45,6 @@ export const Brief = styled.div`
 
   p:last-child {
     font-size: ${(props) => props.theme.fontSizes.$sm};
-  }
-
-  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
-    position: static;
   }
 `;
 
