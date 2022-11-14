@@ -43,7 +43,7 @@ export default function BurgerMenu(props: Props) {
           <Navs />
         </s.NavWrapper>
       </s.BurgerMenu>
-      <s.Overlay isMenuOpened={isMenuOpened} />
+      <s.Overlay isMenuOpened={isMenuOpened} onClick={closeMenu} />
     </>
   );
 }
