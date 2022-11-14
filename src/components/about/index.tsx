@@ -26,8 +26,11 @@ export default function About() {
         <Image src={person2} alt="picture of the author" />
       </s.Photo>
       <s.Resume>
-        歡迎檢視<a>我的履歷</a>
-        快速了解我的個人基本資料和經歷，或者繼續往下瀏覽我的技能與作品集介紹!
+        歡迎檢視
+        <s.ResumeLink href="#" title="my resume">
+          我的履歷
+        </s.ResumeLink>
+        了解我的個人基本資料和經歷，或者繼續往下瀏覽技能與作品集介紹!
       </s.Resume>
     </s.About>
   );

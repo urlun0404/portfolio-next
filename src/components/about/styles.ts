@@ -51,13 +51,25 @@ export const Resume = styled.p`
   grid-row: 3/4;
   grid-column: 1/2;
   font-size: 0.85rem;
-  & > a {
-    padding: 0 0.15rem;
-    text-decoration: underline;
-    cursor: pointer;
-  }
+  line-height: 2em;
+
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     font-size: 0.7rem;
     text-align: center;
+  }
+`;
+
+export const ResumeLink = styled.a`
+  padding: 0.25rem;
+  margin: 0.15rem;
+
+  text-decoration: underline;
+  background-color: ${(props) => props.theme.colors.bg.grayLight70};
+  border-radius: 2.5px;
+  cursor: pointer;
+
+  &:hover {
+    font-weight: ${(props) => props.theme.fontWeights.bold};
+    background-color: ${(props) => props.theme.colors.bg.grayDark70};
   }
 `;
