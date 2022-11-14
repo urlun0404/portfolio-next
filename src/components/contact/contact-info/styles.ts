@@ -3,11 +3,14 @@ import styled from 'styled-components';
 export const Info = styled.div`
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  padding: 1rem 30px;
+  justify-content: space-between;
+  padding: 1rem 1rem 50px;
 
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     align-items: center;
+    padding: 1rem 0.5rem 50px;
   } ;
 `;
 
@@ -41,13 +44,13 @@ export const Brief = styled.div`
 `;
 
 export const ContactLinks = styled.div`
-  position: absolute;
-  bottom: 50px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
   font-size: 14px;
 
-  P {
+  p {
     margin: 1rem 0;
   }
 
@@ -58,14 +61,16 @@ export const ContactLinks = styled.div`
 
 export const LinksContainer = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
 
   a {
     width: 36px;
     height: 36px;
     padding: 0.25rem;
-    margin: 0 0.5rem;
+    margin: 0.25rem 0.5rem;
   }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
+    justify-content: center;
+  } ;
 `;
