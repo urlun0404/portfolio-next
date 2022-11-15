@@ -1,8 +1,12 @@
 # Personal Webstie
 
-Hi! I'm You-Lun, Lin and this is [my personal website](#); I made it using React with Next.js, styled components, and TypeScript to show personal profile and other information about WHAT I'am doing and WHAT I have done. Please feel free to leave some messages in contact form or send me an email. I'll reply to you ASAP :)
+Hi! I'm You-Lun, Lin and this is [my personal website](https://portfolio-next-jet.vercel.app/); I made it using React with Next.js, styled components, and TypeScript to show personal profile and other information about WHAT I'am doing and WHAT I have done. Please feel free to leave some messages in contact form or send me an email. I'll reply to you ASAP :)
 
 <img src="/homepage.png" alt="homepage image" style="width: 600px;">
+
+## Website
+
+[Website link on Vercel!](https://portfolio-next-jet.vercel.app/)
 
 ## Built With
 
