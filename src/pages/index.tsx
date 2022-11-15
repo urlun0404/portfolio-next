@@ -1,6 +1,5 @@
 import About from 'components/about';
 import Contact from 'components/contact';
-import Footer from 'components/footer';
 import GlobalStyles from 'styles/global';
 import Header from 'components/layout/header';
 import Home from 'components/home';
@@ -28,7 +27,6 @@ export default function HomePage() {
           <Skills />
           <Projects />
           <Contact />
-          <Footer />
           <BackToTop isBackToTopVisible={isBackToTopVisible} />
         </ProjectsProvider>
       </Theme>
