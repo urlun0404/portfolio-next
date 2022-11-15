@@ -17,7 +17,7 @@ export const NavBar = styled.nav`
   &.dark {
     background-color: ${(props) => props.theme.colors.bg.black90};
 
-    & > a,
+    & > ul > li > a,
     & > .burger-menu.open-btn > svg {
       color: ${(props) => props.theme.colors.bg.white90};
     }
