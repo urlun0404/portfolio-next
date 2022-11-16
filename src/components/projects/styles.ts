@@ -5,6 +5,16 @@ export const Projects = styled(L.Section)`
   width: 100%;
   min-height: 100%;
   height: auto;
+
+  & > #project-container {
+    transition: all 0.5s ease-in;
+  }
+
+  &.hidden {
+    & > #project-container {
+      opacity: 0;
+    }
+  }
 `;
 
 export const Title = styled(L.SectionTitle)``;
@@ -16,7 +26,7 @@ export const Container = styled.section`
   align-items: center;
   width: 100%;
   height: 100%;
-  
+
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     flex-direction: column;
   }
