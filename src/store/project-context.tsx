@@ -19,11 +19,11 @@ const PROJECTS = [
   {
     name: 'portfolio',
     caption: 'Portfolio',
-    src: Images.photoGallery,
+    src: Images.portfolioNext,
     alt: 'picture of Portfolio project',
     link: {
       github: 'https://github.com/urlun0404/portfolio-next',
-      demo: '/',
+      demo: 'https://portfolio-next-jet.vercel.app/',
     },
     details: {
       query: 'portfolio',
@@ -36,7 +36,7 @@ const PROJECTS = [
     alt: 'picture of Photo Gallery Website project',
     link: {
       github: 'https://github.com/urlun0404/photo-gallery-react',
-      demo: '#',
+      demo: 'https://photo-gallery-react-gamma.vercel.app/',
     },
     details: {
       query: 'photo-gallery',
