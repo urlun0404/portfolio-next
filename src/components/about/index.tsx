@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { person2 } from '../../../public/assets/images';
+import { images } from '../../../public/assets';
 import * as s from './styles';
 
 export default function About() {
@@ -23,7 +23,7 @@ export default function About() {
         </p>
       </s.Biography>
       <s.Photo>
-        <Image src={person2} alt="picture of the author" />
+        <Image src={images.person2} alt="picture of the author" />
       </s.Photo>
       <s.Resume>
         歡迎檢視

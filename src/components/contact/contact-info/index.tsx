@@ -1,13 +1,13 @@
 import * as s from './styles';
 import Image from 'next/image';
 import Links from 'components/layout/links';
-import { person1 } from '../../../../public/assets/images';
+import { images } from '../../../../public/assets';
 
 export default function ContactInfo() {
   return (
     <s.Info id="info">
       <s.Brief>
-        <Image src={person1} alt="picture of the author" />
+        <Image src={images.person1} alt="picture of the author" />
         <s.BriefTextContainer>
           <p>You-Lun, Lin (Lauren, Lin)</p>
           <p>Web Developer</p>

@@ -1,7 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+
+module.exports = {
   reactStrictMode: true,
   swcMinify: true,
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      type: 'asset/inline',
+    });
+    return config;
+  },
 };
-
-module.exports = nextConfig;

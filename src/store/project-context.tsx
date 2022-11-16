@@ -1,5 +1,5 @@
 import { createContext } from 'react';
-import * as Images from '../../public/assets/images/';
+import { images } from '../../public/assets';
 
 export interface ProjectsType {
   name: string;
@@ -19,7 +19,7 @@ const PROJECTS = [
   {
     name: 'portfolio',
     caption: 'Portfolio',
-    src: Images.portfolioNext,
+    src: images.portfolioNext,
     alt: 'picture of Portfolio project',
     link: {
       github: 'https://github.com/urlun0404/portfolio-next',
@@ -32,7 +32,7 @@ const PROJECTS = [
   {
     name: 'photo-gallery',
     caption: 'Photo Gallery Website',
-    src: Images.photoGallery,
+    src: images.photoGallery,
     alt: 'picture of Photo Gallery Website project',
     link: {
       github: 'https://github.com/urlun0404/photo-gallery-react',
@@ -45,7 +45,7 @@ const PROJECTS = [
   {
     name: 'to-do-list',
     caption: 'To Do List',
-    src: Images.toToListJs,
+    src: images.toToListJs,
     alt: 'picture of Hawaii project',
     link: {
       github: 'https://github.com/urlun0404/todolist',

@@ -1,5 +1,7 @@
-export { default as person1 } from './person1.png';
-export { default as person2 } from './person2.png';
-export { default as toToListJs } from './to-do-list.png';
-export { default as photoGallery } from './photo-gallery-website.jpg';
-export { default as portfolioNext } from './portfolio-next.jpg';
+import person1 from './person1.png';
+import person2 from './person2.png';
+import toToListJs from './to-do-list.png';
+import photoGallery from './photo-gallery-website.jpg';
+import portfolioNext from './portfolio-next.jpg';
+
+export default { person1, person2, toToListJs, photoGallery, portfolioNext };
