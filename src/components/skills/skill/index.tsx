@@ -11,9 +11,9 @@ interface Props {
 
 export default function Skill(props: Props) {
   return (
-    <s.Skill className="skill">
+    <s.Skill>
       {props.images.map((img) => (
-        <s.FigContainer key={img.alt}>
+        <s.FigContainer key={img.alt} className="skill-img">
           <Image src={img.src} alt={img.alt} width={0} height={0} />
         </s.FigContainer>
       ))}
