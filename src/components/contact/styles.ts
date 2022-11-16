@@ -1,7 +1,17 @@
 import styled from 'styled-components';
 import * as L from 'styles/layout';
 
-export const Contact = styled(L.Section)``;
+export const Contact = styled(L.Section)`
+  & > #contact-container {
+    transition: all 0.4s ease-in;
+  }
+
+  &.hidden {
+    & > #contact-container {
+      transform: translateY(20%);
+    }
+  }
+`;
 
 export const Title = styled(L.SectionTitle)``;
 
