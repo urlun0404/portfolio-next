@@ -34,15 +34,17 @@ export default function Home(props: Props) {
   return (
     <s.Home ref={observedRef}>
       <s.Title>
-        Hi, I am <span>You-Lun Lin.</span>
+        <p className="typing">
+          Hi, I am <span>You-Lun Lin.</span>
+        </p>
       </s.Title>
-      <s.SubTitle>
-        <p>正在通往前端開發的路上</p>
+      <s.SubTitle className="fadeIn">
+        <p>在前端開發的路上</p>
         <p>具備HTML5、CSS3、JavaScript基本前端技能</p>
         <p>曾有使用React獨立開發及協作開發上線產品的經驗</p>
         <p>也正在學習後端工具（Node.js、Express、MongoDB）</p>
       </s.SubTitle>
-      <s.LinksContainer>
+      <s.LinksContainer className="fadeIn">
         <Links />
       </s.LinksContainer>
     </s.Home>
