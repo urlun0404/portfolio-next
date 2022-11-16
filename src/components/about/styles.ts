@@ -7,8 +7,24 @@ export const About = styled(L.Section)`
   grid-template-columns: 60% 40%;
   row-gap: 1rem;
   column-gap: 0.75rem;
+
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     display: flex;
+  }
+
+  & > #bio,
+  #photo {
+    transition: all 0.3s ease-in;
+  }
+
+  &.hidden {
+    & > #bio {
+      transform: translateX(-150%);
+    }
+
+    & > #photo {
+      transform: translateX(150%);
+    }
   }
 `;
 
@@ -22,9 +38,11 @@ export const Biography = styled.article`
   grid-column: 1/2;
   line-height: 1.5em;
   text-align: justify;
+
   & > p {
     margin: 0.75rem 0;
   }
+
   @media (max-width: ${(props) => props.theme.breakpoints.$md}) {
     font-size: 0.85rem;
   }
@@ -36,11 +54,13 @@ export const Photo = styled.figure`
   display: flex;
   justify-content: center;
   align-items: center;
+
   & > img {
     width: 100%;
     max-width: 250px;
     height: auto;
     border-radius: 10px;
+
     @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
       width: 70%;
     }
