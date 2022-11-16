@@ -1,30 +1,33 @@
 import styled from 'styled-components';
 
-const imageWidth = '3rem';
-
 export const Skill = styled.div`
-  flex-basis: 1 1 200px;
+  flex-basis: 1 1 100px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-width: 220px;
-  width: 45%;
-  max-width: 250px;
-  margin: 0.5rem 0.75rem;
-  padding: 0.75rem;
-  border: 1px solid gray;
-  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 1.25rem 1.5rem;
 `;
 
 export const FigContainer = styled.figure`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  &:nth-child(1) {
+    width: 80px;
+    height: 80px;
+  }
+  &:nth-child(n + 2) {
+    width: 60px;
+    height: 60px;
+  }
 
   & > img {
-    width: ${imageWidth};
-    height: ${imageWidth};
+    width: 100%;
+    height: 100%;
   }
 `;
 

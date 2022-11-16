@@ -11,19 +11,12 @@ interface Props {
 
 export default function Skill(props: Props) {
   return (
-    <s.Skill>
-      <s.FigContainer>
-        {props.images.map((img) => (
-          <Image
-            key={img.alt}
-            src={img.src}
-            alt={img.alt}
-            width={0}
-            height={0}
-          />
-        ))}
-      </s.FigContainer>
-      <s.FigCaption>{props.caption}</s.FigCaption>
+    <s.Skill className="skill">
+      {props.images.map((img) => (
+        <s.FigContainer key={img.alt}>
+          <Image src={img.src} alt={img.alt} width={0} height={0} />
+        </s.FigContainer>
+      ))}
     </s.Skill>
   );
 }
