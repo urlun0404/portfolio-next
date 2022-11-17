@@ -9,8 +9,8 @@ export interface Project {
   };
   details: {
     query: string;
-    skills: string[];
-    features: string[];
+    skills: Readonly<Array<string>>;
+    features: Readonly<Array<string>>;
   };
 }
 
