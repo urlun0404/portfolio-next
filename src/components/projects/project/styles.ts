@@ -62,7 +62,7 @@ export const DemoLinkContainer = styled.div`
   background-color: ${(props) => props.theme.colors.bg.black70};
   width: 100%;
   height: 100%;
-  transition: all ease-in 0.2s;
+  transition: all 0.2s ease-in;
 `;
 
 export const DemoLink = styled.a`
