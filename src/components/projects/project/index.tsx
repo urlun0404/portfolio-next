@@ -1,9 +1,9 @@
 import * as s from './styles';
 import Image from 'next/image';
 import { FiGithub, FiLink } from 'react-icons/fi';
-import { ProjectsType } from 'store/project-context';
+import type * as T from 'store/project-context/types';
 
-interface Props extends ProjectsType {}
+interface Props extends T.Project {}
 
 export default function Project(props: Props) {
   return (
@@ -36,7 +36,11 @@ export default function Project(props: Props) {
         </s.DemoLinkContainer>
       </s.FigContainer>
       <s.FigCaption className="caption">{props.name}</s.FigCaption>
-      <s.MoreInfoLink href={`projects/${props.details.query}`}>
+      <s.MoreInfoLink
+        href={{
+          pathname: `projects/${props.details.query}`,
+        }}
+      >
         More Info
       </s.MoreInfoLink>
     </s.Project>
