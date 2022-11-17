@@ -8,7 +8,7 @@ import Projects from 'components/projects';
 import ProjectsProvider from 'store/project-context';
 import React, { useState } from 'react';
 import Skills from 'components/skills';
-import Theme from 'styles';
+
 import { BackToTop } from 'components/layout/buttons';
 
 export default function HomePage() {
@@ -18,18 +18,16 @@ export default function HomePage() {
   return (
     <>
       <GlobalStyles />
-      <Theme>
-        <ProjectsProvider>
-          <Header setIsNavbarFixed={setIsNavbarFixed} />
-          <NavBar isNavbarFixed={isNavbarFixed} />
-          <Home setIsBackToTopVisible={setIsBackToTopVisible} />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-          <BackToTop isBackToTopVisible={isBackToTopVisible} />
-        </ProjectsProvider>
-      </Theme>
+      <ProjectsProvider>
+        <Header setIsNavbarFixed={setIsNavbarFixed} />
+        <NavBar isNavbarFixed={isNavbarFixed} />
+        <Home setIsBackToTopVisible={setIsBackToTopVisible} />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <BackToTop isBackToTopVisible={isBackToTopVisible} />
+      </ProjectsProvider>
     </>
   );
 }

@@ -56,5 +56,13 @@ export const theme = {
       black70: 'rgba(0, 0, 0, 0.7)',
       black90: 'rgba(0, 0, 0, 0.9)',
     },
+    $primary: '#000000',
+    $secondary: '#979797',
+    $info: '#2563eb',
+    $success: '#16a34a',
+    $warn: '#FBBD23',
+    $error: '#f43f5e',
+    $errorLight: '#fbdada',
+    $text: '#000000',
   },
 } as const;

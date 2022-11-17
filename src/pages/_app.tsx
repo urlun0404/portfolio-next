@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
+import Theme from 'styles';
+import GlobalStyles from 'styles/global';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,7 +14,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>You-Lun Lin | Frontend Developer</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+      <Theme>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </Theme>
     </>
   );
 }
