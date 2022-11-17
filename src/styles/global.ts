@@ -6,6 +6,7 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        scroll-behavior: smooth;
     }
 
     html, body {
@@ -14,7 +15,6 @@ const GlobalStyles = createGlobalStyle`
         font-size: ${theme.fontSizes.$md};
         font-weight: ${theme.fontWeights.medium};
         overflow-x: hidden;
-        scroll-behavior: smooth;
     }
 
     div#__next{
