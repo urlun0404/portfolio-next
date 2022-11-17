@@ -41,18 +41,30 @@ export default function About() {
           因工作業務有幸參與公司網站開發過程而對開發產生興趣。
         </p>
         <p>
-          開始自學網頁前後端開發以後，我已具備基本的HTML5/CSS3/JavaScript前端技能，並有使用Vite、React和TypeScript獨立開發上線產品，以及使用Git
-          flow流程協作開發的web實習經驗。
+          開始自學網頁前後端開發以後，我已具備基本的HTML5/CSS3/JavaScript前端技能，並有使用Vite、React和TypeScript獨立開發以及使用GitHub
+          flow流程協作開發上線產品的web實習經驗。
         </p>
         <p>
-          我目前在嘗試運用其他流行的前端開發工具、框架與套件，如webpack、Next.js等改善我的作品集，也正在學習Node.js、MongoDB了解後端處理流程，繼續朝向成為更專業的網頁開發者目標邁進。
+          我目前在嘗試運用其他前端開發工具、框架與套件，如webpack、Next.js等改善我的作品集，也正在學習Node.js、MongoDB了解後端處理流程，朝向成為網頁開發工作者的目標邁進。
         </p>
         <s.Resume>
-          歡迎檢視
-          <s.ResumeLink href="#" title="my resume">
-            我的履歷
+          <p>
+            歡迎檢視下方履歷了解我的個人基本資料和經歷，或者繼續往下瀏覽技能與作品集簡介!
+          </p>
+          <s.ResumeLink
+            href="https://drive.google.com/file/d/1X8nfyBkYvgNjpZt1doCZs0Fm7cYeh22p/view?usp=share_link"
+            title="履歷"
+            target="_blank"
+          >
+            履歷 &#40;zh&#41;
           </s.ResumeLink>
-          了解我的個人基本資料和經歷，或者繼續往下瀏覽技能與作品集介紹!
+          <s.ResumeLink
+            href="https://drive.google.com/file/d/1Z4IzIxaRKqsvRXGgd6Qki-nfiVuvqrAF/view?usp=share_link"
+            title="resume"
+            target="_blank"
+          >
+            Resume &#40;en&#41;
+          </s.ResumeLink>
         </s.Resume>
       </s.Biography>
       <s.Photo id="photo">

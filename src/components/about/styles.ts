@@ -36,6 +36,7 @@ export const Title = styled(L.SectionTitle)`
 export const Biography = styled.article`
   grid-row: 2/3;
   grid-column: 1/2;
+  font-size: ${(props) => props.theme.fontSizes.$md};
   line-height: 1.5em;
   text-align: justify;
 
@@ -67,11 +68,18 @@ export const Photo = styled.figure`
   }
 `;
 
-export const Resume = styled.p`
+export const Resume = styled.div`
   grid-row: 3/4;
   grid-column: 1/2;
-  font-size: 0.85rem;
-  line-height: 2em;
+  display: grid;
+  justify-items: center;
+  font-size: ${(props) => props.theme.fontSizes.$sm};
+
+  & > p {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    line-height: 1.5em;
+  }
 
   @media (max-width: ${(props) => props.theme.breakpoints.$sm}) {
     font-size: 0.7rem;
@@ -80,16 +88,18 @@ export const Resume = styled.p`
 `;
 
 export const ResumeLink = styled.a`
-  padding: 0.25rem;
-  margin: 0.15rem;
-
-  text-decoration: underline;
-  background-color: ${(props) => props.theme.colors.bg.grayLight70};
-  border-radius: 2.5px;
+  min-width: 90px;
+  padding: 0.25rem 0.5rem;
+  margin: 0.5rem;
+  font-weight: ${(props) => props.theme.fontWeights.bold};
+  text-align: center;
+  color: ${(props) => props.theme.colors.bg.white};
+  background-color: ${(props) => props.theme.colors.bg.black};
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 
   &:hover {
-    font-weight: ${(props) => props.theme.fontWeights.bold};
-    background-color: ${(props) => props.theme.colors.bg.grayDark70};
+    background-color: ${(props) => props.theme.colors.bg.grayDark90};
   }
 `;
