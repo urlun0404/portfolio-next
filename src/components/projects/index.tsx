@@ -38,7 +38,7 @@ export default function Projects() {
     >
       <s.Title>Projects</s.Title>
       <s.Container id="project-container">
-        {projectsCtx.map((project) => (
+        {Object.values(projectsCtx).map((project) => (
           <Project key={project.name} {...project} />
         ))}
       </s.Container>
