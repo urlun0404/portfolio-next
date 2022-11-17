@@ -9,6 +9,8 @@ export interface Project {
   };
   details: {
     query: string;
+    skills: string[];
+    features: string[];
   };
 }
 
