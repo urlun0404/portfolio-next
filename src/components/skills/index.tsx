@@ -1,17 +1,23 @@
 import * as s from './styles';
 import Skill from './skill';
 import SKILLS from 'constants/skills';
-import { useRef } from 'react';
+import { useMemo, useRef } from 'react';
 import useInView from 'hooks/use-in-view';
+
+const options = {
+  threshold: 0.3,
+};
 
 export default function Skills() {
   const observedRef = useRef<HTMLElement>(null);
-  const { isInView } = useInView({
-    observedRef,
-    options: {
-      threshold: 0.3,
-    },
-  });
+  const { isInView } = useInView(
+    useMemo(() => {
+      return {
+        observedRef,
+        options: options,
+      };
+    }, [observedRef]),
+  );
 
   return (
     <s.Skills

@@ -1,18 +1,24 @@
 import Image from 'next/image';
 import { images } from '../../../public/assets';
 import * as s from './styles';
-import { useRef } from 'react';
+import { useRef, useMemo } from 'react';
 import useInView from 'hooks/use-in-view';
+
+const options = {
+  threshold: 0.1,
+  rootMargin: '-20px',
+};
 
 export default function About() {
   const observedRef = useRef<HTMLElement>(null);
-  const { isInView } = useInView({
-    observedRef,
-    options: {
-      threshold: 0.1,
-      rootMargin: '-20px',
-    },
-  });
+  const { isInView } = useInView(
+    useMemo(() => {
+      return {
+        observedRef,
+        options: options,
+      };
+    }, [observedRef]),
+  );
 
   return (
     <s.About id="about" ref={observedRef} className={isInView ? '' : 'hidden'}>

@@ -1,19 +1,25 @@
 import * as s from './styles';
 import Project from './project';
 import { ProjectsContext } from 'store/project-context';
-import { useContext, useRef } from 'react';
+import { useContext, useRef, useMemo } from 'react';
 import useInView from 'hooks/use-in-view';
+
+const options = {
+  threshold: 0.2,
+  rootMargin: '-5px',
+};
 
 export default function Projects() {
   const projectsCtx = useContext(ProjectsContext);
   const observedRef = useRef<HTMLElement>(null);
-  const { isInView } = useInView({
-    observedRef,
-    options: {
-      threshold: 0.2,
-      rootMargin: '-5px',
-    },
-  });
+  const { isInView } = useInView(
+    useMemo(() => {
+      return {
+        observedRef,
+        options: options,
+      };
+    }, [observedRef]),
+  );
 
   return (
     <s.Projects
