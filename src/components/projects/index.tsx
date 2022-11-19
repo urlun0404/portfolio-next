@@ -1,34 +1,19 @@
 import * as s from './styles';
 import Project from './project';
 import { ProjectsContext } from 'store/project-context';
-import { useContext, useState, useRef, useEffect } from 'react';
+import { useContext, useRef } from 'react';
+import useInView from 'hooks/use-in-view';
 
 export default function Projects() {
   const projectsCtx = useContext(ProjectsContext);
-  const [isInView, setIsInView] = useState(false);
   const observedRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    if (observedRef.current) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const [entry] = entries;
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            observer.unobserve(entry.target);
-          } else {
-            setIsInView(false);
-          }
-        },
-        {
-          threshold: 0.2,
-          rootMargin: '-5px',
-        },
-      );
-
-      observer.observe(observedRef.current);
-    }
-  }, [observedRef]);
+  const { isInView } = useInView({
+    observedRef,
+    options: {
+      threshold: 0.2,
+      rootMargin: '-5px',
+    },
+  });
 
   return (
     <s.Projects

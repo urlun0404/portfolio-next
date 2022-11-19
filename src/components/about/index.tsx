@@ -1,33 +1,18 @@
 import Image from 'next/image';
 import { images } from '../../../public/assets';
 import * as s from './styles';
-import { useEffect, useState, useRef } from 'react';
+import { useRef } from 'react';
+import useInView from 'hooks/use-in-view';
 
 export default function About() {
-  const [isInView, setIsInView] = useState(false);
   const observedRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    if (observedRef.current) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const [entry] = entries;
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            observer.unobserve(entry.target);
-          } else {
-            setIsInView(false);
-          }
-        },
-        {
-          threshold: 0.1,
-          rootMargin: '-20px',
-        },
-      );
-
-      observer.observe(observedRef.current);
-    }
-  }, [observedRef]);
+  const { isInView } = useInView({
+    observedRef,
+    options: {
+      threshold: 0.1,
+      rootMargin: '-20px',
+    },
+  });
 
   return (
     <s.About id="about" ref={observedRef} className={isInView ? '' : 'hidden'}>

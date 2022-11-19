@@ -1,33 +1,18 @@
 import * as s from './styles';
 import ContactForm from './contact-form';
 import ContactInfo from './contact-info';
-import { useState, useRef, useEffect } from 'react';
+import { useRef } from 'react';
+import useInView from 'hooks/use-in-view';
 
 export default function Contact() {
-  const [isInView, setIsInView] = useState(false);
   const observedRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    if (observedRef.current) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const [entry] = entries;
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            observer.unobserve(entry.target);
-          } else {
-            setIsInView(false);
-          }
-        },
-        {
-          threshold: 0.1,
-          rootMargin: '10px',
-        },
-      );
-
-      observer.observe(observedRef.current);
-    }
-  }, [observedRef]);
+  const { isInView } = useInView({
+    observedRef,
+    options: {
+      threshold: 0.3,
+      rootMargin: '20px',
+    },
+  });
 
   return (
     <s.Contact
