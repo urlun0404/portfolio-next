@@ -1,35 +1,40 @@
 import * as s from './styles';
-import { useEffect, useRef } from 'react';
 import Links from 'components/layout/links';
+import useInView from 'hooks/use-in-view';
+import { useRef } from 'react';
 
 interface Props {
   setIsBackToTopVisible: (param: boolean) => void;
 }
 
+const intersectionCallback = function (
+  setState: (param: boolean) => void,
+): IntersectionObserverCallback {
+  return (entries: IntersectionObserverEntry[]) => {
+    const [entry] = entries;
+    if (entry.intersectionRatio < 0.1) {
+      setState(true);
+    } else {
+      setState(false);
+    }
+  };
+};
+
 export default function Home(props: Props) {
   const observedRef = useRef<HTMLElement>(null);
 
-  useEffect(() => {
-    if (observedRef.current) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          const [entry] = entries;
-          if (entry.intersectionRatio < 0.1) {
-            props.setIsBackToTopVisible(true);
-          } else {
-            props.setIsBackToTopVisible(false);
-          }
-        },
-        {
-          root: null,
-          threshold: 0.1,
-          rootMargin: '-25%',
-        },
-      );
+  const callback = intersectionCallback(props.setIsBackToTopVisible);
 
-      observer.observe(observedRef.current);
-    }
-  }, [observedRef, props.setIsBackToTopVisible]);
+  useInView({
+    observedRef,
+    callback: callback,
+    options: {
+      root: null,
+      threshold: 0.1,
+      rootMargin: '-25%',
+    },
+    willUnObserve: false,
+  });
 
   return (
     <s.Home ref={observedRef}>
