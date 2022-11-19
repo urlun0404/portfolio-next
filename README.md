@@ -22,7 +22,3 @@ The follows you can see on this webstie:
 - personal profile, social media links and resume;
 - my skills and projects;
 - contact information.
-
-## To Do:
-
-- Some interesting animation!
